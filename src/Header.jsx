@@ -1,5 +1,5 @@
 function Header() {
-  return <h1>Ash Ketchum</h1>
+  return <h1>Cindy Hulitsky</h1>
 }
 
 
