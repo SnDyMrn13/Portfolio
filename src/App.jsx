@@ -3,8 +3,6 @@ import Header from './Header.jsx'
 
 import About from './About.jsx'
 
-import ProjectLinks from './ProjectLinks.jsx'
-
 import Footer from './Footer.jsx'
 
 import Fortune from './Fortune.jsx'
@@ -13,7 +11,15 @@ import GitHubLink from './GitHubLink.jsx'
 
 import ProjectCount from './ProjectCount.jsx'
 
+import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
 
+import CapstonePortfolioCard from './CapstonePortfolioCard.jsx'
+
+import ApiTutorialPortfolioCard from './ApiTutorialPortfolioCard.jsx'
+
+import SignUpPagePortfolioCard from './SignUpPagePortfolioCard.jsx'
+
+import GreetingCardGeneratorPortfolioCard from './GreetingCardGeneratorPortfolioCard.jsx'
 
 
 function App() {
@@ -23,9 +29,13 @@ function App() {
       <p>Simple person with new coding skills.</p>
       <About/>
       <ProjectCount/>
-      <ProjectLinks/>
       <GitHubLink/>
       <Fortune/>
+      <GreetingCardGeneratorPortfolioCard/>
+      <SignUpPagePortfolioCard/>
+      <ApiTutorialPortfolioCard/>
+      <DataPlaylistPortfolioCard/>
+      <CapstonePortfolioCard/>
       <Footer/>
     </div>
   )
