@@ -18,7 +18,7 @@ import ProjectCount from './ProjectCount.jsx'
 
 function App() {
   return (
-    <div>
+    <div className = "container">
       <Header />
       <p>Simple person with new coding skills.</p>
       <About/>
