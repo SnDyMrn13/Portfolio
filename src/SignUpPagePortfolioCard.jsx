@@ -5,7 +5,7 @@ function SignUpPagePortfolioCard() {
   let liveUrl = "https://SnDyMrn13.github.io/signup-page/"
   let repoUrl = "https://github.com/SnDyMrn13/signup-page"
   return (
-    <article>
+    <article className="card-pumpkin">
       <h2>{name}</h2>
       <p>{description}</p>
       <p>

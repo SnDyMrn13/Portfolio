@@ -5,7 +5,7 @@ function GreetingCardGeneratorPortfolioCard() {
   let liveUrl = "https://SnDyMrn13.github.io/greeting-card-generator/"
   let repoUrl = "https://github.com/SnDyMrn13/greeting-card-generator"
   return (
-    <article>
+    <article className="card-azure">
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
