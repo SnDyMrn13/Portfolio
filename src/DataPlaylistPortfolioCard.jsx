@@ -9,7 +9,7 @@ function DataPlaylistPortfolioCard() {
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
-        <a href={repoUrl}>Read the Code</a>
+        <a href={liveUrl}>See it live</a> · <a href={repoUrl}>Read the Code</a>
       </p>
     </article>
   )

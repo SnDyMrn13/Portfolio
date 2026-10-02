@@ -21,11 +21,14 @@ import SignUpPagePortfolioCard from './SignUpPagePortfolioCard.jsx'
 
 import GreetingCardGeneratorPortfolioCard from './GreetingCardGeneratorPortfolioCard.jsx'
 
+import Hero from './Hero.jsx'
+
 
 function App() {
   return (
     <div className = "container">
       <Header />
+      <Hero/>
       <p>Simple person with new coding skills.</p>
       <About/>
       <ProjectCount/>

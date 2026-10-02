@@ -11,6 +11,10 @@ A React site that shows the projects I built in Level 2.
 | `Fortune` | a random fortune | a list and `randomNumber` |
 | `Footer` | &copy; and the current year | the year the page is opened |
 | `DataPlaylistPortfolioCard` | one project: its name, description, and two links | variables inside the component |
+| `SignUpPagePortfolioCard` | one project: it's name, description, and two links |  variables inside the component |
+| `ApiTutorialPortfolioCard` | one project: it's name, description, and two links | variables inside the component |
+| `CapstonePortfolioCard` | one project: it's name, description, and two links | variables inside the component |
+| `GreetingCardGeneratorPortfolioCard` | one project: it's name, description, and two links | variables inside the component |
 |  |  |  |
 
 ## What I'm adding next
