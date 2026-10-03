@@ -7,6 +7,7 @@ function Hero() {
   return (
     <div className="hero">
       <img src={src} alt="Blue Skies" />
+      <h2>Simple person with new coding skills.</h2>
     </div>
   )
 }
