@@ -1,0 +1,35 @@
+
+article.card-azure {
+  --pico-card-background-color: var(--pico-color-azure-50);
+  --pico-color: var(--pico-color-azure-850);
+  --pico-h2-color: var(--pico-color-azure-850);
+  --pico-primary: var(--pico-color-azure-650);
+}
+
+article.card-pumpkin {
+  --pico-card-background-color: var(--pico-color-pumpkin-50);
+  --pico-color: var(--pico-color-pumpkin-850);
+  --pico-h2-color: var(--pico-color-pumpkin-850);
+  --pico-primary: var(--pico-color-pumpkin-650);
+}
+
+article.card-blue {
+  --pico-card-background-color: var(--pico-color-blue-50);
+  --pico-color: var(--pico-color-blue-850);
+  --pico-h2-color: var(--pico-color-blue-850);
+  --pico-primary: var(--pico-color-blue-650);
+}
+
+article.card-amber {
+  --pico-card-background-color: var(--pico-color-amber-50);
+  --pico-color: var(--pico-color-amber-850);
+  --pico-h2-color: var(--pico-color-amber-850);
+  --pico-primary: var(--pico-color-amber-650);
+}
+
+article.card-purple {
+  --pico-card-background-color: var(--pico-color-purple-50);
+  --pico-color: var(--pico-color-purple-850);
+  --pico-h2-color: var(--pico-color-purple-850);
+  --pico-primary: var(--pico-color-purple-650);
+}
