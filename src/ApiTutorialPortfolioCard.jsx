@@ -1,15 +1,15 @@
 
 function ApiTutorialPortfolioCard() {
-  let name = "Api Tutorial"
-  let description = "A tutorial page about using API."
-  let liveUrl = "https://SnDyMrn13.github.io/api-tutorial/"
-  let repoUrl = "https://github.com/SnDyMrn13/api-tutorial"
+  const name = "Api Tutorial"
+  const description = "A tutorial page about using API."
+  const liveUrl = "https://SnDyMrn13.github.io/api-tutorial/"
+  const repoUrl = "https://github.com/SnDyMrn13/api-tutorial"
   return (
     <article className="card-blue">
       <h2>{name}</h2>
       <p>{description}</p>
       <p>
-       <a href={liveUrl}>See it live</a> · <a href={repoUrl}>Read the Code</a>
+       <a href={liveUrl} role="button">See it live</a> · <a href={repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
     </article>
   )

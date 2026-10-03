@@ -29,7 +29,7 @@ function App() {
     <div className = "container">
       <Header />
       <Hero/>
-      <p>Simple person with new coding skills.</p>
+      
       <About/>
       <ProjectCount/>
       <GitHubLink/>
