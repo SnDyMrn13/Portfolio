@@ -40,6 +40,7 @@ function App() {
       <DataPlaylistPortfolioCard/>
       <CapstonePortfolioCard/>
       <Footer/>
+    
     </div>
   )
 }
