@@ -1,15 +1,23 @@
 
+import {useState} from 'react'
 import randomNumber from "./randomNumber"
 
 function Fortune(){
- let wisdom =[
+ const wisdom =[
     "Fortune favors the Bold.",
     "Have Faith.",
     "Don't count your chickens before they're hatched."
  ] 
- let old = randomNumber(0, wisdom.length - 1)
- return <p>{wisdom[old]}</p>
+ const [index, setIndex] = useState(0)
+ const newFortune = () =>{
+   setIndex(randomNumber(0, wisdom.length - 1 ))
+ }
+ return(
+   <div>
+       <p>{wisdom[index]}</p>
+       <button onClick={newFortune}>New Fortune</button>
+   </div>
+ )
+
 }
-
-
 export default Fortune
