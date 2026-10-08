@@ -5,21 +5,23 @@ A React site that shows the projects I built in Level 2.
 
 ## Components
 
-| Component | What it shows | Where its values come from |
-| --- | --- | --- |
-| `Header` | my name and a line about me | typed into the JSX |
-| `Fortune` | a random fortune | a list and `randomNumber` |
-| `Footer` | &copy; and the current year | the year the page is opened |
-| `DataPlaylistPortfolioCard` | one project: its name, description, and two links | variables inside the component |
-| `SignUpPagePortfolioCard` | one project: it's name, description, and two links |  variables inside the component |
-| `ApiTutorialPortfolioCard` | one project: it's name, description, and two links | variables inside the component |
-| `CapstonePortfolioCard` | one project: it's name, description, and two links | variables inside the component |
-| `GreetingCardGeneratorPortfolioCard` | one project: it's name, description, and two links | variables inside the component |
+| Component | What it shows | Where its values come from | What it remembers |
+| --- | --- | --- | --- |
+| `Header` | my name and a line about me | typed into the JSX | - |
+| `Hero` | my hero photo | `heroPhoto`, which calls `imageUrl` | whether the photo is in color |
+| `Fortune` | a random fortune | a list and `randomNumber` | which fortune is showing |
+| `Footer` | &copy; and the current year | the year the page is opened | - |
+| `DataPlaylistPortfolioCard` | one project: its name, description, and two links | variables inside the component | its likes |
+| `SignUpPagePortfolioCard` | one project: it's name, description, and two links |  variables inside the component | its likes |
+| `ApiTutorialPortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
+| `CapstonePortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
+| `GreetingCardGeneratorPortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
 |  |  |  |
 
 ## What I'm adding next
-
-
+- Color and Black and White buttons on my hero
+-a New Fortune button
+-a Like button on every card
 
 ## Built with
 
