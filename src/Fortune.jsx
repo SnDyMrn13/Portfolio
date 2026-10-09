@@ -8,7 +8,7 @@ function Fortune(){
     "Have Faith.",
     "Don't count your chickens before they're hatched."
  ] 
- const [index, setIndex] = useState(0)
+ const [index, setIndex] = useState(randomNumber(0, wisdom.length - 1))
  const newFortune = () =>{
    setIndex(randomNumber(0, wisdom.length - 1 ))
  }
