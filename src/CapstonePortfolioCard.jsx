@@ -1,10 +1,15 @@
 
+import {useState} from 'react'
 
 function CapstonePortfolioCard() {
   const name = "Capstone"
   const description = "An endangered bird list from my own data API."
   const liveUrl = "https://SnDyMrn13.github.io/capstone-level-2/"
   const repoUrl = "https://github.com/SnDyMrn13/capstone-level-2"
+   const [likes, setLikes] = useState (0)
+   const addLike = () => {
+    setLikes(likes + 1)
+   }
   return (
     <article className="card-amber">
       <h2>{name}</h2>
@@ -12,6 +17,7 @@ function CapstonePortfolioCard() {
       <p>
        <a href={liveUrl} role="button">See it live</a> · <a href={repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
+       <button onClick={addLike}>Like{likes}</button>
     </article>
   )
 }

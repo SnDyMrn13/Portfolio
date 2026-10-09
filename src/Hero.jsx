@@ -1,13 +1,29 @@
 
+import {useState} from 'react'
 import heroPhoto from './hero-photo.js'
 import './hero.css'
 
 function Hero() {
-  const [src, alt] = heroPhoto(250, 100, "Blue Skies")
+  const [sat, setSat] = useState(0)
+  const showColor =()=> {
+    setSat(0)
+  }
+
+  const showBlackAndWhite = () =>{
+    setSat(-100)
+  }
+  const [src, alt] = heroPhoto("photo-1566321343730-237ec35e53f3" , 250, 100, sat, "Blue Skies")
+
   return (
-    <div className="hero">
-      <img src={src} alt={alt} />
-      <h2>A practical person with new coding skills.</h2>
+    <div>
+      <div className="hero">
+        <img src={src} alt={alt} />
+        <h2>A practical person with new coding skills.</h2>
+      </div>
+      <p className="hero-buttons">
+        <button onClick={showColor}>Color</button> 
+        <button onClick={showBlackAndWhite}>Black and White</button>
+      </p>  
     </div>
   )
 }
