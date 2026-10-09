@@ -20,7 +20,8 @@ function Hero() {
         <h2>A practical person with new coding skills.</h2>
       </div>
       <p>
-        <button onClick={showColor}>Color</button> .
+        <button onClick={showColor}>Color</button> 
+        &nbsp;
         <button onClick={showBlackAndWhite}>Black and White</button>
       </p>  
     </div>
