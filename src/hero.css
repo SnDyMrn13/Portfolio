@@ -5,6 +5,12 @@
   position: relative;
 }
 
+.hero-buttons {
+  display:flex;
+  flex-wrap:wrap;
+  gap: 1rem;
+}
+
 .hero img {
   display: block;
   width: 100%
