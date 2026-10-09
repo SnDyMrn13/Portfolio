@@ -12,7 +12,8 @@ function Hero() {
   const showBlackAndWhite = () =>{
     setSat(-100)
   }
-  const [src, alt] = heroPhoto(250, 100, sat, "Blue Skies")
+  const [src, alt] = heroPhoto("photo-1566321343730-237ec35e53f3" , 250, 100, sat, "Blue Skies")
+
   return (
     <div>
       <div className="hero">
