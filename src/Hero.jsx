@@ -14,7 +14,24 @@ function Hero() {
     "Cloud Delight",
     "Towering Clouds"
   ]
-  const [sat, setSat] = useState(0)
+ const [index, setIndex] = useState(0)
+ const [sat, setSat] = useState(0)
+  
+  const nextPhoto = () => {
+    if (index === photos.length - 1){
+      setIndex(0)
+    } else {
+      setIndex(index + 1)
+    }
+  }
+
+  const previousPhoto = () => {
+    if (index === 0) {
+      setIndex(photos.length - 1)
+    } else {
+      setIndex(index - 1)
+    }
+  }
   const showColor =()=> {
     setSat(0)
   }
@@ -22,7 +39,7 @@ function Hero() {
   const showBlackAndWhite = () =>{
     setSat(-100)
   }
-  const [src, alt] = heroPhoto(photos[0] , 250, 100, sat, descriptions[0])
+  const [src, alt] = heroPhoto(photos[index] , 250, 100, sat, descriptions[index])
 
   return (
     <div>
@@ -31,6 +48,8 @@ function Hero() {
         <h2>A practical person with new coding skills.</h2>
       </div>
       <p className="hero-buttons">
+        <button onClick={previousPhoto}>Previous</button>
+        <button onClick={nextPhoto}>Next</button>
         <button onClick={showColor}>Color</button> 
         <button onClick={showBlackAndWhite}>Black and White</button>
       </p>  
