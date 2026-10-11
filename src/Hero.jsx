@@ -39,7 +39,13 @@ function Hero() {
   const showBlackAndWhite = () =>{
     setSat(-100)
   }
-  const [src, alt] = heroPhoto(photos[index] , 250, 100, sat, descriptions[index])
+  const [src, alt] = heroPhoto({
+    photo: photos[index],
+    width: 250,
+    height: 100,
+    sat,
+    description: descriptions[index],
+})
 
   return (
     <div>
