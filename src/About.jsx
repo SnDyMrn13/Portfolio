@@ -2,9 +2,9 @@
 function About(){
    return(
      <div>
-        <p>I am learning React.</p>
-        <p>I am learning new ways to use Html and Javascript.</p>
-        <p>I am working it out.</p>
+        <p><strong>I am learning React.</strong></p>
+        <p><strong>I am learning new ways to use Html and Javascript.</strong></p>
+        <p><strong>I am working it out.</strong></p>
 
      </div>
 

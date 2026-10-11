@@ -47,6 +47,7 @@ function Hero() {
         <img src={src} alt={alt} />
         <h2>A practical person with new coding skills.</h2>
       </div>
+      <p>Photo {index + 1} of {photos.length} </p>
       <p className="hero-buttons">
         <button onClick={previousPhoto}>Previous</button>
         <button onClick={nextPhoto}>Next</button>

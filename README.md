@@ -16,6 +16,7 @@ A React site that shows the projects I built in Level 2.
 | `ApiTutorialPortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
 | `CapstonePortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
 | `GreetingCardGeneratorPortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
+| `ClickLabPortfolioCard` | one project: it's name, description, and two links | variables inside the component | its likes |
 |  |  |  |
 
 ## What I'm adding next

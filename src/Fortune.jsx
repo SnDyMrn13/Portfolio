@@ -14,7 +14,7 @@ function Fortune(){
  }
  return(
    <div>
-       <p>{wisdom[index]}</p>
+       <p><strong>{wisdom[index]}</strong></p>
        <button onClick={newFortune}>New Fortune</button>
    </div>
  )
