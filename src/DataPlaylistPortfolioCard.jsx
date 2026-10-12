@@ -2,11 +2,13 @@
 import {useState} from 'react'
 
 function DataPlaylistPortfolioCard() {
-  const name = "Data Playlist"
-  const description = "A playlist page that loads its songs from my own data API."
-  let details = "The project was built to practice with fetching API and using 'await' and 'response'.  Also, making buttons to move forward and backward in an array as well as saving selections."
-  const liveUrl = "https://SnDyMrn13.github.io/data-playlist/"
-  const repoUrl = "https://github.com/SnDyMrn13/data-playlist"
+  const project = {
+    name: "Data Playlist",
+    description: "A playlist page that loads its songs from my own data API.",
+    details: "The project was built to practice with fetching API and using 'await' and 'response'.  Also, making buttons to move forward and backward in an array as well as saving selections.",
+    liveUrl: "https://SnDyMrn13.github.io/data-playlist/",
+    repoUrl: "https://github.com/SnDyMrn13/data-playlist",
+  }
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 
@@ -18,9 +20,9 @@ function DataPlaylistPortfolioCard() {
     setOpen(!open)
   }
 
-  let text = description
+  let text = project.description
   if (open) {
-    text = description + "  " + details
+    text = project.description + "  " + project.details
   }
 
   let label = "Show More"
@@ -37,11 +39,11 @@ function DataPlaylistPortfolioCard() {
 
   return (
     <article className="card-purple">
-      <h2>{name}</h2>
+      <h2>{project.name}</h2>
       <p>{text}</p>
        <button className={look} onClick={toggleOpen}>{label}</button> 
       <p>
-        <a href={liveUrl} role="button">See it live</a> · <a href={repoUrl} className = "outline" role="button">Read the Code</a>
+        <a href={project.liveUrl} role="button">See it live</a> · <a href={project.repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
         <button onClick={addLike}>Like{likes}</button>
     </article>
