@@ -5,14 +5,10 @@ import './hero.css'
 
 function Hero() {
   const photos = [
-    "photo-1566321343730-237ec35e53f3" ,
-    "photo-1768720378059-999f7b02bcca",
-    "photo-1597571063304-81f081944ee8"
-  ]
-  const descriptions = [
-    "Blue Skies",
-    "Cloud Delight",
-    "Towering Clouds"
+    { id: "photo-1566321343730-237ec35e53f3", description:  "Blue Skies"},
+    { id: "photo-1768720378059-999f7b02bcca", description:  "Cloud Delight"},
+    { id: "photo-1597571063304-81f081944ee8", description:  "Towering Clouds"},
+
   ]
 
   const [settings, setSettings] = useState({ index: 0, sat: 0})
@@ -40,12 +36,14 @@ function Hero() {
   const showBlackAndWhite = () =>{
     setSettings({...settings, sat: -100})
   }
+  const {id, description} = photos[settings.index]
+  
   const {src, alt} = heroPhoto({
-    photo: photos[settings.index],
+    photo: id,
     width: 250,
     height: 100,
     sat: settings.sat,
-    description: descriptions[settings.index]
+    description
 })
 
   return (
@@ -54,7 +52,7 @@ function Hero() {
         <img src={src} alt={alt} />
         <h2>A practical person with new coding skills.</h2>
       </div>
-      <p>Photo {settings.index + 1} of {photos.length} </p>
+      <p>Photo{settings.index + 1} of {photos.length} </p>
       <p className="hero-buttons">
         <button onClick={previousPhoto}>Previous Photo</button>
         <button onClick={nextPhoto}>Next Photo</button>
