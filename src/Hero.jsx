@@ -14,37 +14,38 @@ function Hero() {
     "Cloud Delight",
     "Towering Clouds"
   ]
- const [index, setIndex] = useState(0)
- const [sat, setSat] = useState(0)
-  
+
+  const [settings, setSettings] = useState({ index: 0, sat: 0})
+
   const nextPhoto = () => {
-    if (index === photos.length - 1){
-      setIndex(0)
+    if (settings.index === photos.length - 1){
+      setSettings({...settings, index: 0})
     } else {
-      setIndex(index + 1)
+      setSettings({...settings, index: settings.index + 1})
     }
   }
 
   const previousPhoto = () => {
-    if (index === 0) {
-      setIndex(photos.length - 1)
+    if (settings.index === 0) {
+      setSettings({...settings, index: photos.length - 1})
     } else {
-      setIndex(index - 1)
+      setSettings({...settings, index: settings.index - 1})
     }
   }
+
   const showColor =()=> {
-    setSat(0)
+    setSettings({...settings, sat: 0})
   }
 
   const showBlackAndWhite = () =>{
-    setSat(-100)
+    setSettings({...settings, sat: -100})
   }
   const {src, alt} = heroPhoto({
-    photo: photos[index],
+    photo: photos[settings.index],
     width: 250,
     height: 100,
-    sat,
-    description: descriptions[index],
+    sat: settings.sat,
+    description: descriptions[settings.index]
 })
 
   return (
@@ -53,7 +54,7 @@ function Hero() {
         <img src={src} alt={alt} />
         <h2>A practical person with new coding skills.</h2>
       </div>
-      <p>Photo {index + 1} of {photos.length} </p>
+      <p>Photo {settings.index + 1} of {photos.length} </p>
       <p className="hero-buttons">
         <button onClick={previousPhoto}>Previous Photo</button>
         <button onClick={nextPhoto}>Next Photo</button>
