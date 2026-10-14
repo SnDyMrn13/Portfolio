@@ -9,7 +9,8 @@ function ProjectCount(){
       "signup-page",
       "api-tutorial",
       "data-playlist",
-      "capstone"
+      "capstone",
+      "click-lab"
    ]  
 
     return <p>The number of projects I did in level-2 was: {projects.length},  and my first project in level-2 was: {projects[0]}.</p> 

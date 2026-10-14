@@ -21,6 +21,8 @@ import SignUpPagePortfolioCard from './SignUpPagePortfolioCard.jsx'
 
 import GreetingCardGeneratorPortfolioCard from './GreetingCardGeneratorPortfolioCard.jsx'
 
+import ClickLabPortfolioCard from './ClickLabPortfolioCard.jsx' 
+
 import Hero from './Hero.jsx'
 
 
@@ -39,6 +41,7 @@ function App() {
       <ApiTutorialPortfolioCard/>
       <DataPlaylistPortfolioCard/>
       <CapstonePortfolioCard/>
+      <ClickLabPortfolioCard/>
       <Footer/>
     
     </div>
