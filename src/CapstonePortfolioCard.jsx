@@ -1,14 +1,9 @@
 
 import {useState} from 'react'
+import projects from './projects.js'
 
 function CapstonePortfolioCard() {
-  const project = {
-   name: "Capstone",
-   description: "An endangered bird list from my own data API.",
-   details: "To help nature lovers find endangered birds near them and information about those birds dietary needs.",
-   liveUrl: "https://SnDyMrn13.github.io/capstone-level-2/",
-   repoUrl: "https://github.com/SnDyMrn13/capstone-level-2",
-  }
+  const project = projects[4]
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 

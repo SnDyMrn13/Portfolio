@@ -1,14 +1,9 @@
 
 import {useState} from 'react'
+import projects from './projects.js' 
 
 function DataPlaylistPortfolioCard() {
-  const project = {
-    name: "Data Playlist",
-    description: "A playlist page that loads its songs from my own data API.",
-    details: "The project was built to practice with fetching API and using 'await' and 'response'.  Also, making buttons to move forward and backward in an array as well as saving selections.",
-    liveUrl: "https://SnDyMrn13.github.io/data-playlist/",
-    repoUrl: "https://github.com/SnDyMrn13/data-playlist",
-  }
+  const project = projects[3] 
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 

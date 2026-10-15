@@ -1,14 +1,10 @@
 
 import {useState} from 'react'
+import projects from './projects.js'
+
 
 function GreetingCardGeneratorPortfolioCard() {
-  const project = {
-   name: "Greeting Card Generator",
-   description: "A greeting card generator page that tailors a card to the user's inputs.",
-   details: "A Mad-Libs project to practice with: strings, concatenation, and arrays.",
-   liveUrl: "https://SnDyMrn13.github.io/greeting-card-generator/",
-   repoUrl: "https://github.com/SnDyMrn13/greeting-card-generator",
-  }
+  const project = projects[0]
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 

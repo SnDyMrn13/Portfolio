@@ -1,15 +1,9 @@
 
 import {useState} from 'react'
+import projects from './projects.js'
 
 function ApiTutorialPortfolioCard() {
-  const project = {
-   name: "Api Tutorial",
-   description: "A tutorial page about using API. ",
-   details: "I built it in Level 2 to show some of what I learned about API.",
-   liveUrl: "https://SnDyMrn13.github.io/api-tutorial/",
-   repoUrl: "https://github.com/SnDyMrn13/api-tutorial",
-  }
-
+  const project = projects[2]
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 

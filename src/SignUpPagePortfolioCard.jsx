@@ -1,14 +1,9 @@
 
 import {useState} from 'react'
+import projects from './projects.js'
 
 function SignUpPagePortfolioCard() {
-  const project = {
-   name: "SignUp Page",
-   description: "A signup page for Board Games enthusiasts.",
-   details: "A project to practice: input options, links, forms making, and CSS.",
-   liveUrl: "https://SnDyMrn13.github.io/signup-page/",
-   repoUrl: "https://github.com/SnDyMrn13/signup-page",
-  }
+  const project = projects[1]
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 

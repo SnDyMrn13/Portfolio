@@ -1,14 +1,9 @@
 
 import {useState} from 'react'
+import projects from './projects.js'
 
 function ClickLabPortfolioCard() {
-  const project = {
-   name: "Click Lab",
-   description: "Board Games Pop Quiz for board games enthusiasts.",
-   details: "To practice click listeners and counter patterns in a fun quiz game.",
-   liveUrl: " https://sndymrn13.github.io/click-lab/",
-   repoUrl: "https://github.com/SnDyMrn13/click-lab",
-  }
+  const project = projects[5]
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 
