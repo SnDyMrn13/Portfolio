@@ -1,17 +1,14 @@
 
 import {useState} from 'react'
-import projects from './projects.js'
 
 
-function GreetingCardGeneratorPortfolioCard() {
-  const project = projects[0]
+function ProjectCard({ project}) {
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 
   const addLike = () => {
     setLikes(likes + 1)
   }
-
   const toggleOpen = () => {
     setOpen(!open)
   }
@@ -31,17 +28,18 @@ function GreetingCardGeneratorPortfolioCard() {
   look = ""
   }
 
+
   return (
-    <article className="card-azure">
+    <article className="card-blue">
       <h2>{project.name}</h2>
       <p>{text}</p>
-       <button className={look} onClick={toggleOpen}>{label}</button>
+      <button className={look} onClick={toggleOpen}>{label}</button>
       <p>
-        <a href={project.liveUrl} role="button">See it live</a> · <a href={project.repoUrl} className = "outline" role="button">Read the Code</a>
+       <a href={project.liveUrl} role="button">See it live</a> · <a href={project.repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
-        <button onClick={addLike}>Like{likes}</button>
+      <button onClick={addLike}>Like{likes}</button>
     </article>
   )
 }
 
-export default GreetingCardGeneratorPortfolioCard
+export default ProjectCard
