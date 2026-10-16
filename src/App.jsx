@@ -11,19 +11,11 @@ import GitHubLink from './GitHubLink.jsx'
 
 import ProjectCount from './ProjectCount.jsx'
 
-import DataPlaylistPortfolioCard from './DataPlaylistPortfolioCard.jsx'
-
-import CapstonePortfolioCard from './CapstonePortfolioCard.jsx'
-
-import ApiTutorialPortfolioCard from './ApiTutorialPortfolioCard.jsx'
-
-import SignUpPagePortfolioCard from './SignUpPagePortfolioCard.jsx'
-
-import GreetingCardGeneratorPortfolioCard from './GreetingCardGeneratorPortfolioCard.jsx'
-
-import ClickLabPortfolioCard from './ClickLabPortfolioCard.jsx' 
-
 import Hero from './Hero.jsx'
+
+import ProjectCard from './ProjectCard.jsx'
+
+import projects from './projects.js'
 
 
 function App() {
@@ -36,12 +28,12 @@ function App() {
       <ProjectCount/>
       <GitHubLink/>
       <Fortune/>
-      <GreetingCardGeneratorPortfolioCard/>
-      <SignUpPagePortfolioCard/>
-      <ApiTutorialPortfolioCard/>
-      <DataPlaylistPortfolioCard/>
-      <CapstonePortfolioCard/>
-      <ClickLabPortfolioCard/>
+      <ProjectCard project={projects[0]}/>
+      <ProjectCard project={projects[1]}/>
+      <ProjectCard project={projects[2]}/>
+      <ProjectCard project={projects[3]}/>
+      <ProjectCard project={projects[4]}/>
+      <ProjectCard project={projects[5]}/>
       <Footer/>
     
     </div>

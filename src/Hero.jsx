@@ -1,7 +1,9 @@
 
 import {useState} from 'react'
 import heroPhoto from './hero-photo.js'
+import PhotoControls from './PhotoControls.jsx'
 import './hero.css'
+
 
 function Hero() {
   const photos = [
@@ -53,12 +55,12 @@ function Hero() {
         <h2>A practical person with new coding skills.</h2>
       </div>
       <p>Photo{settings.index + 1} of {photos.length} </p>
-      <p className="hero-buttons">
-        <button onClick={previousPhoto}>Previous Photo</button>
-        <button onClick={nextPhoto}>Next Photo</button>
-        <button onClick={showColor}>In Color</button> 
-        <button onClick={showBlackAndWhite}>In Black and White</button>
-      </p>  
+      <PhotoControls
+       onPrevious={previousPhoto}
+       onNext={nextPhoto}
+       onColor={showColor}
+       onBlackAndWhite={showBlackAndWhite}
+      /> 
     </div>
   )
 }
