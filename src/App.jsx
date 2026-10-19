@@ -28,12 +28,7 @@ function App() {
       <ProjectCount/>
       <GitHubLink/>
       <Fortune/>
-      <ProjectCard project={projects[0]}/>
-      <ProjectCard project={projects[1]}/>
-      <ProjectCard project={projects[2]}/>
-      <ProjectCard project={projects[3]}/>
-      <ProjectCard project={projects[4]}/>
-      <ProjectCard project={projects[5]}/>
+      {projects.map((project) => <ProjectCard key={project.name} project={project} />)}
       <Footer/>
     
     </div>
