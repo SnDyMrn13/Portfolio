@@ -1,6 +1,6 @@
 
 import {useState} from 'react'
-import randomNumber from "./randomNumber"
+import randomNumber from './randomNumber'
 
 function Fortune(){
  const wisdom =[

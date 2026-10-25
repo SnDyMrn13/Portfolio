@@ -37,7 +37,7 @@ function ProjectCard({ project}) {
       <p>
        <a href={project.liveUrl} role="button">See it live</a> · <a href={project.repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
-      <button onClick={addLike}>Like{likes}</button>
+      <button onClick={addLike}>Like {likes}</button>
     </article>
   )
 }
