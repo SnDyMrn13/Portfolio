@@ -1,21 +1,14 @@
 
 import {useState} from 'react'
 
-function ClickLabPortfolioCard() {
-  const project = {
-   name: "Click Lab",
-   description: "Board Games Pop Quiz for board games enthusiasts.",
-   details: "To practice click listeners and counter patterns in a fun quiz game.",
-   liveUrl: " https://sndymrn13.github.io/click-lab/",
-   repoUrl: "https://github.com/SnDyMrn13/click-lab",
-  }
+
+function ProjectCard({ project}) {
   const [likes, setLikes] = useState (0)
   const [open, setOpen] = useState(false)
 
   const addLike = () => {
     setLikes(likes + 1)
   }
-
   const toggleOpen = () => {
     setOpen(!open)
   }
@@ -36,17 +29,17 @@ function ClickLabPortfolioCard() {
   }
 
 
-   return (
+  return (
     <article className="card-blue">
       <h2>{project.name}</h2>
       <p>{text}</p>
-       <button className={look} onClick={toggleOpen}>{label}</button>
+      <button className={look} onClick={toggleOpen}>{label}</button>
       <p>
        <a href={project.liveUrl} role="button">See it live</a> · <a href={project.repoUrl} className = "outline" role="button">Read the Code</a>
       </p>
-      <button onClick={addLike}>Like{likes}</button>
+      <button onClick={addLike}>Like {likes}</button>
     </article>
   )
 }
 
-export default ClickLabPortfolioCard
+export default ProjectCard
